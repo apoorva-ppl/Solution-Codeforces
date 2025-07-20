@@ -15,10 +15,7 @@ class Solution {
 
 public:
     vector<int> topoSort(int V, vector<vector<int>>& edges) {
-        // Correct declaration of adjacency list
         vector<vector<int>> adj(V);
-        
-        // Build adjacency list from edge list
         for (auto edge : edges) {
             adj[edge[0]].push_back(edge[1]);
         }
